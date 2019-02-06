@@ -63,7 +63,7 @@ make down
 
 #### Backend: (strapi)
 
-* Admin: http://localhost:1337/adminer
+* Admin: http://localhost:1337/admin
 * Static frontend: http://localhost:1337
 * REST: http://localhost:1337/myApi
 * GraphQL (Playground): http://localhost:1337/graphql
