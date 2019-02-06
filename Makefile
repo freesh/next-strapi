@@ -24,7 +24,7 @@ init::
     		"  \"build\": \"next build\",\n" \
     		"  \"start\": \"next start\"\n" \
 			"}"
-	@echo "And than run 'make up'"
+	@echo "And then run 'make up'"
 
 up::
 	${MAKE} _up
