@@ -28,7 +28,7 @@ init::
 
 up::
 	${MAKE} _up
-	${MAKE} _strapi-start & ${MAKE} _start-next
+	${MAKE} _start-strapi & ${MAKE} _start-next
 
 down::
 	docker-compose down
@@ -54,6 +54,7 @@ _init-next::
 	cd ${APP_DIR} && yarn init -y
 	cd ${APP_DIR} && yarn add --prefer-offline react react-dom next
 	cd ${APP_DIR} && mkdir pages
+	echo "export default () => <div>Welcome to next.js!</div>" >> ${APP_DIR}/pages/index.js
 
 _init-strapi::
 	strapi new ${BACKEND_DIR} --dbclient=postgres --dbhost=0.0.0.0 --dbport=8086 --dbname=strapi --dbusername=toor --dbpassword=toor --dbforce
