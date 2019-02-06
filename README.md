@@ -34,7 +34,7 @@ __2. Init strapi and next__
 ```bash
 make init
 ```
-Than folow the instructions and edit the *./app/package.json* to add the scripts section.
+Than follow the instructions and edit the *./app/package.json* to add the scripts section.
 ```` json
 {
   "scripts": {
