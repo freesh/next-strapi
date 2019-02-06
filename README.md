@@ -68,3 +68,7 @@ make down
 * REST: http://localhost:1337/myApi
 * GraphQL (Playground): http://localhost:1337/graphql
 * Documentation (Swagger): http://localhost:1337/documentation/v1.0.0
+
+#### Adminer:
+
+* http://localhost:8080
