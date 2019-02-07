@@ -54,7 +54,14 @@ _init-next::
 	cd ${APP_DIR} && yarn init -y
 	cd ${APP_DIR} && yarn add --prefer-offline react react-dom next
 	cd ${APP_DIR} && mkdir pages
-	echo "export default () => <div>Welcome to next.js!</div>" >> ${APP_DIR}/pages/index.js
+	cd ${APP_DIR} && mkdir static
+	echo "export default () => ( \n" \
+		"    <div> \n" \
+		"        <div>Welcome to next.js!</div> \n" \
+		"        <p>Documentaion: <a href=\"https://nextjs.org/docs/\" target=\"_blank\">https://nextjs.org/docs/</a> \n" \
+		"    </div> \n" \
+		") \n" \
+	 >> ${APP_DIR}/pages/index.js
 
 _init-strapi::
 	strapi new ${BACKEND_DIR} --dbclient=postgres --dbhost=0.0.0.0 --dbport=8086 --dbname=strapi --dbusername=toor --dbpassword=toor --dbforce
