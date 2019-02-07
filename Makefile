@@ -58,7 +58,7 @@ _init-next::
 	echo "export default () => ( \n" \
 		"    <div> \n" \
 		"        <div>Welcome to next.js!</div> \n" \
-		"        <p>Documentaion: <a href=\"https://nextjs.org/docs/\" target=\"_blank\">https://nextjs.org/docs/</a> \n" \
+		"        <p>Documentaion: <a href=\"https://nextjs.org/docs/\" target=\"_blank\">https://nextjs.org/docs/</a></p> \n" \
 		"    </div> \n" \
 		") \n" \
 	 >> ${APP_DIR}/pages/index.js
